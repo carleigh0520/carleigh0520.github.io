@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>事件處理</title>
+    </head>
+    <body>
+        <h3>Event handling</h3>
+        <!--<div> onclick="console.log('click');"
+        ondblclick="alert('double click');"
+        
+        >click</div>-->
+        <div
+            onmouseover="over(this);"
+            onmouseout="out(this);"
+        >click</div>
+        <button 
+        onmouseover="this.style.color='red';"
+        onmouseout="this.style.color='black';"
+        >ok</button>
+        <script>
+            function over(elem){
+                elem.style.color="red";
+                elem.style.fontWeight="bold";
+
+            }
+            function out(elem){
+                elem.style.color="red";
+                elem.style.fontWeight="normal";
+            }
+        
+        </script>
+    </body>
+</html>
